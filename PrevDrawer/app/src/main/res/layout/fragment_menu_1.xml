@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:background="@drawable/blue"
+    android:layout_height="fill_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.aluno.myapplication.MainActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/texto_prev"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:text="PREVISÃO DO TEMPO"/>
+
+
+        <EditText
+            android:id="@+id/City"
+            android:entries="@string/cidade"
+            android:hint="Cidade:"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginTop="90dp"
+            android:maxLength="30">
+        </EditText>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/City"
+            android:layout_below="@id/City"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:prompt="@string/app_name"/>
+
+
+
+        <Button
+            android:id="@+id/buttonSearch"
+            android:text="@string/textButtonSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/City"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="100dp"
+            android:layout_below="@id/spinner">
+            <!--android:onClick="onClick"-->>
+        </Button>
+
+        <!-- ICONES DA CONDIÇÂO DO TEMPO _ INÍCIO-->
+        <ImageView android:id="@+id/icone1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignStart="@id/result"
+            android:layout_alignEnd="@id/result"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/buttonSearch"
+            android:background="@drawable/barra_icone"
+            android:visibility="invisible"
+            android:src="@drawable/_1"/>
+
+        <ImageView android:id="@+id/icone1n"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignStart="@id/result"
+            android:layout_alignEnd="@id/result"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/buttonSearch"
+            android:background="@drawable/barra_icone"
+            android:visibility="invisible"
+            android:src="@drawable/_1n"/>
+
+        <ImageView android:id="@+id/icone2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignStart="@id/result"
+            android:layout_alignEnd="@id/result"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/buttonSearch"
+            android:background="@drawable/barra_icone"
+            android:visibility="invisible"
+            android:src="@drawable/_2"/>
+
+        <ImageView android:id="@+id/icone2n"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignStart="@id/result"
+            android:layout_alignEnd="@id/result"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/buttonSearch"
+            android:background="@drawable/barra_icone"
+            android:visibility="invisible"
+            android:src="@drawable/_2n"/>
+
+        <ImageView android:id="@+id/icone2r"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignStart="@id/result"
+            android:layout_alignEnd="@id/result"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/buttonSearch"
+            android:background="@drawable/barra_icone"
+            android:visibility="invisible"
+            android:src="@drawable/_2r"/>
+
+        <ImageView android:id="@+id/icone2rn"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignStart="@id/result"
+            android:layout_alignEnd="@id/result"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/buttonSearch"
+            android:background="@drawable/barra_icone"
+            android:visibility="invisible"
+            android:src="@drawable/_2rn"/>
+
+        <ImageView android:id="@+id/icone3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignStart="@id/result"
+            android:layout_alignEnd="@id/result"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/buttonSearch"
+            android:background="@drawable/barra_icone"
+            android:visibility="invisible"
+            android:src="@drawable/_3"/>
+
+        <ImageView android:id="@+id/icone3n"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignStart="@id/result"
+            android:layout_alignEnd="@id/result"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/buttonSearch"
+            android:background="@drawable/barra_icone"
+            android:visibility="invisible"
+            android:src="@drawable/_3n"/>
+
+        <ImageView android:id="@+id/icone3tm"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignStart="@id/result"
+            android:layout_alignEnd="@id/result"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/buttonSearch"
+            android:background="@drawable/barra_icone"
+            android:visibility="invisible"
+            android:src="@drawable/_3tm"/>
+
+        <ImageView android:id="@+id/icone4"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignStart="@id/result"
+            android:layout_alignEnd="@id/result"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/buttonSearch"
+            android:background="@drawable/barra_icone"
+            android:visibility="invisible"
+            android:src="@drawable/_4"/>
+
+        <ImageView android:id="@+id/icone4n"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignStart="@id/result"
+            android:layout_alignEnd="@id/result"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/buttonSearch"
+            android:background="@drawable/barra_icone"
+            android:visibility="invisible"
+            android:src="@drawable/_4n"/>
+
+        <ImageView android:id="@+id/icone4r"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignStart="@id/result"
+            android:layout_alignEnd="@id/result"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/buttonSearch"
+            android:background="@drawable/barra_icone"
+            android:visibility="invisible"
+            android:src="@drawable/_4r"/>
+
+        <ImageView android:id="@+id/icone4rn"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignStart="@id/result"
+            android:layout_alignEnd="@id/result"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/buttonSearch"
+            android:background="@drawable/barra_icone"
+            android:visibility="invisible"
+            android:src="@drawable/_4rn"/>
+
+        <ImageView android:id="@+id/icone4t"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignStart="@id/result"
+            android:layout_alignEnd="@id/result"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/buttonSearch"
+            android:background="@drawable/barra_icone"
+            android:visibility="invisible"
+            android:src="@drawable/_4t"/>
+
+        <ImageView android:id="@+id/icone4tn"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignStart="@id/result"
+            android:layout_alignEnd="@id/result"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/buttonSearch"
+            android:background="@drawable/barra_icone"
+            android:visibility="invisible"
+            android:src="@drawable/_4tn"/>
+
+        <ImageView android:id="@+id/icone5"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignStart="@id/result"
+            android:layout_alignEnd="@id/result"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/buttonSearch"
+            android:background="@drawable/barra_icone"
+            android:visibility="invisible"
+            android:src="@drawable/_5"/>
+
+        <ImageView android:id="@+id/icone5n"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignStart="@id/result"
+            android:layout_alignEnd="@id/result"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/buttonSearch"
+            android:background="@drawable/barra_icone"
+            android:visibility="invisible"
+            android:src="@drawable/_5n"/>
+
+        <ImageView android:id="@+id/icone6"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignStart="@id/result"
+            android:layout_alignEnd="@id/result"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/buttonSearch"
+            android:background="@drawable/barra_icone"
+            android:visibility="invisible"
+            android:src="@drawable/_6"/>
+
+        <ImageView android:id="@+id/icone6n"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignStart="@id/result"
+            android:layout_alignEnd="@id/result"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/buttonSearch"
+            android:background="@drawable/barra_icone"
+            android:visibility="invisible"
+            android:src="@drawable/_6n"/>
+
+        <ImageView android:id="@+id/icone7"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignStart="@id/result"
+            android:layout_alignEnd="@id/result"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/buttonSearch"
+            android:background="@drawable/barra_icone"
+            android:visibility="invisible"
+            android:src="@drawable/_7"/>
+
+        <ImageView android:id="@+id/icone7n"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignStart="@id/result"
+            android:layout_alignEnd="@id/result"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/buttonSearch"
+            android:background="@drawable/barra_icone"
+            android:visibility="invisible"
+            android:src="@drawable/_7n"/>
+
+        <ImageView android:id="@+id/icone8"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignStart="@id/result"
+            android:layout_alignEnd="@id/result"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/buttonSearch"
+            android:background="@drawable/barra_icone"
+            android:visibility="invisible"
+            android:src="@drawable/_8"/>
+
+        <ImageView android:id="@+id/icone8n"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignStart="@id/result"
+            android:layout_alignEnd="@id/result"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/buttonSearch"
+            android:background="@drawable/barra_icone"
+            android:visibility="invisible"
+            android:src="@drawable/_8n"/>
+
+        <ImageView android:id="@+id/icone9"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignStart="@id/result"
+            android:layout_alignEnd="@id/result"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/buttonSearch"
+            android:background="@drawable/barra_icone"
+            android:visibility="invisible"
+            android:src="@drawable/_9"/>
+
+        <ImageView android:id="@+id/icone9n"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignStart="@id/result"
+            android:layout_alignEnd="@id/result"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/buttonSearch"
+            android:background="@drawable/barra_icone"
+            android:visibility="invisible"
+            android:src="@drawable/_9n"/>
+        <!-- ICONES DA CONDIÇÂO DO TEMPO _ FINAL-->
+
+        <TextView android:id="@+id/result"
+            android:text="@string/results"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/resposta"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:layout_below="@+id/icone2"
+            android:visibility="invisible"
+            android:layout_alignParentLeft="@+id/buttonSearch">
+        </TextView>
+
+    </RelativeLayout>
+</ScrollView>
+
