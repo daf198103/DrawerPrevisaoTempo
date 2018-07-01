@@ -31,8 +31,7 @@ import static com.example.david.prevdrawer.R.*;
 
 public class Menu1 extends Fragment implements AdapterView.OnItemSelectedListener {
 
-    Connection c = new Connection();
-    Connection c2 = new Connection();
+  
     String estado = "";
 
 
